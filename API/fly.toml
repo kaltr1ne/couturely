@@ -1,4 +1,4 @@
-# fly.toml app configuration file generated for couturelyy on 2023-09-03T11:47:24+02:00
+# fly.toml app configuration file generated for couturelyy on 2023-09-04T16:55:04+02:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
@@ -10,12 +10,8 @@ primary_region = "otp"
   image = "kaltrine/couturely:latest"
 
 [env]
-  ASPNETCORE_URLS = "http://+:8080"
-  StripeSettings_PublishableKey = "pk_test_51Nk6X4CtqqqDyP0nYPqW5GtYmwpHVkLosKZ5X8Yb698xNgeLiTYwUDu5YmQ6eUJnD868fcSmes5kubkzvFz5D9FR00WZWEt0kV"
-  Cloudinary__CloudName="dty6r7mwz"
-  Cloudinary__ApiKey="565361963158943"
-  
-
+  ASPNETCORE_URLS="http://+:8080"
+  StripeSettings__PublishableKey="pk_test_51Nk6X4CtqqqDyP0nYPqW5GtYmwpHVkLosKZ5X8Yb698xNgeLiTYwUDu5YmQ6eUJnD868fcSmes5kubkzvFz5D9FR00WZWEt0kV"
 
 
 [http_service]
