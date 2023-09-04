@@ -40,8 +40,8 @@ namespace API.Data
                         "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
                     Price = 20000,
                     PictureUrl = "/images/products/sb-ang1.png",
-                    Brand = "Zara",
-                    Type = "Boards",
+                    Brand = "Couturely",
+                    Type = "Top",
                     QuantityInStock = 100
                 },
                 new Product
@@ -50,8 +50,8 @@ namespace API.Data
                     Description = "Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.",
                     Price = 15000,
                     PictureUrl = "/images/products/sb-ang2.png",
-                    Brand = "Angular",
-                    Type = "Boards",
+                    Brand = "Couturely",
+                    Type = "Jeans",
                     QuantityInStock = 100
                 },
                 new Product
@@ -61,8 +61,8 @@ namespace API.Data
                         "Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.",
                     Price = 18000,
                     PictureUrl = "/images/products/sb-core1.png",
-                    Brand = "NetCore",
-                    Type = "Boards",
+                    Brand = "Zara",
+                    Type = "Dress",
                     QuantityInStock = 100
                 },
                 new Product
@@ -72,8 +72,8 @@ namespace API.Data
                         "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.",
                     Price = 30000,
                     PictureUrl = "/images/products/sb-core2.png",
-                    Brand = "NetCore",
-                    Type = "Boards",
+                    Brand = "Couturely",
+                    Type = "Bodysuit",
                     QuantityInStock = 100
                 },
                 new Product
@@ -83,8 +83,8 @@ namespace API.Data
                         "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
                     Price = 25000,
                     PictureUrl = "/images/products/sb-react1.png",
-                    Brand = "React",
-                    Type = "Boards",
+                    Brand = "Couturely",
+                    Type = "Boots",
                     QuantityInStock = 100
                 },
                 new Product
@@ -94,8 +94,8 @@ namespace API.Data
                         "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
                     Price = 12000,
                     PictureUrl = "/images/products/sb-ts1.png",
-                    Brand = "TypeScript",
-                    Type = "Boards",
+                    Brand = "Couturely",
+                    Type = "Cardigan",
                     QuantityInStock = 100
                 },
                 new Product
@@ -105,8 +105,8 @@ namespace API.Data
                         "Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
                     Price = 1000,
                     PictureUrl = "/images/products/hat-core1.png",
-                    Brand = "NetCore",
-                    Type = "Hats",
+                    Brand = "Couturely",
+                    Type = "Sweatshirt",
                     QuantityInStock = 100
                 },
                 new Product
@@ -116,8 +116,8 @@ namespace API.Data
                         "Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
                     Price = 8000,
                     PictureUrl = "/images/products/hat-react1.png",
-                    Brand = "React",
-                    Type = "Hats",
+                    Brand = "Couturely",
+                    Type = "Coat",
                     QuantityInStock = 100
                 },
                 new Product
@@ -127,8 +127,8 @@ namespace API.Data
                         "Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
                     Price = 1500,
                     PictureUrl = "/images/products/hat-react2.png",
-                    Brand = "React",
-                    Type = "Hats",
+                    Brand = "Couturely",
+                    Type = "Coat",
                     QuantityInStock = 100
                 },
                 new Product
@@ -138,7 +138,7 @@ namespace API.Data
                         "Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
                     Price = 1800,
                     PictureUrl = "/images/products/glove-code1.png",
-                    Brand = "VS Code",
+                    Brand = "Couturely",
                     Type = "Gloves",
                     QuantityInStock = 100
                 },
@@ -149,8 +149,8 @@ namespace API.Data
                         "Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
                     Price = 1500,
                     PictureUrl = "/images/products/glove-code2.png",
-                    Brand = "VS Code",
-                    Type = "Gloves",
+                    Brand = "Couturely",
+                    Type = "Hat",
                     QuantityInStock = 100
                 },
                 new Product
@@ -160,8 +160,8 @@ namespace API.Data
                         "Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
                     Price = 1600,
                     PictureUrl = "/images/products/glove-react1.png",
-                    Brand = "React",
-                    Type = "Gloves",
+                    Brand = "Couturely",
+                    Type = "Shoes",
                     QuantityInStock = 100
                 },
                 new Product
@@ -171,7 +171,7 @@ namespace API.Data
                         "Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
                     Price = 1400,
                     PictureUrl = "/images/products/glove-react2.png",
-                    Brand = "React",
+                    Brand = "Couturely",
                     Type = "Gloves",
                     QuantityInStock = 100
                 },
@@ -182,7 +182,7 @@ namespace API.Data
                         "Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.",
                     Price = 25000,
                     PictureUrl = "/images/products/boot-redis1.png",
-                    Brand = "Redis",
+                    Brand = "Couturely",
                     Type = "Boots",
                     QuantityInStock = 100
                 },
@@ -193,7 +193,7 @@ namespace API.Data
                         "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
                     Price = 18999,
                     PictureUrl = "/images/products/boot-core2.png",
-                    Brand = "NetCore",
+                    Brand = "Bershka",
                     Type = "Boots",
                     QuantityInStock = 100
                 },
@@ -204,7 +204,7 @@ namespace API.Data
                         "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.",
                     Price = 19999,
                     PictureUrl = "/images/products/boot-core1.png",
-                    Brand = "NetCore",
+                    Brand = "Zara",
                     Type = "Boots",
                     QuantityInStock = 100
                 },
@@ -214,7 +214,7 @@ namespace API.Data
                     Description = "Aenean nec lorem. In porttitor. Donec laoreet nonummy augue.",
                     Price = 15000,
                     PictureUrl = "/images/products/boot-ang2.png",
-                    Brand = "Angular",
+                    Brand = "Couturely",
                     Type = "Boots",
                     QuantityInStock = 100
                 },
@@ -225,7 +225,7 @@ namespace API.Data
                         "Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.",
                     Price = 18000,
                     PictureUrl = "/images/products/boot-ang1.png",
-                    Brand = "Angular",
+                    Brand = "Couturely",
                     Type = "Boots",
                     QuantityInStock = 100
                 },
