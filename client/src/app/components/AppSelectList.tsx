@@ -1,4 +1,4 @@
-import { FormControl, InputLabel, Select, MenuItem, useControlled, FormHelperText } from "@mui/material";
+import { FormControl, InputLabel, Select, MenuItem, FormHelperText } from "@mui/material";
 import { UseControllerProps, useController } from "react-hook-form";
 
 interface Props extends UseControllerProps {

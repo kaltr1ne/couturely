@@ -2,7 +2,6 @@ import { Typography, Button, TableContainer, Paper, Table, TableHead, TableRow, 
 import { Edit, Delete } from "@mui/icons-material";
 import { currencyFormat } from "../../app/util/util";
 import useProducts from "../../app/hooks/useProducts";
-import { useDispatch } from "react-redux";
 import { useAppDispatch } from "../../app/store/configureStore";
 import { removeProduct, setPageNumber } from "../catalog/catalogSlice";
 import AppPagination from "../../app/components/AppPagination";
@@ -10,7 +9,6 @@ import { useState } from "react";
 import ProductForm from "./ProductForm";
 import { Product } from "../../app/models/product";
 import agent from "../../app/api/agent";
-import { error } from "console";
 import { LoadingButton } from "@mui/lab";
 
 export default function Inventory() { 
