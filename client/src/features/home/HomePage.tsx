@@ -25,7 +25,7 @@ export default function HomePage() {
 
             <Box display='flex' justifyContent='center' sx={{p: 4}}>
                 <Typography>
-                    Welcome to the shop
+                    Welcome to the shop!
                 </Typography>
             </Box>
         </>
