@@ -3,6 +3,7 @@ import { toast } from "react-toastify";
 import { PaginatedResponse } from "../models/pagination";
 import { router } from "../router/Routes";
 import { store } from "../store/configureStore";
+import { request } from "http";
 
 const sleep = () => new Promise(resolve => setTimeout(resolve, 500))
 
@@ -80,13 +81,22 @@ function createFormData(item: any) {
 const Admin = {
     createProduct: (product: any) => requests.postForm('products', createFormData(product)),
     updateProduct: (product: any) => requests.putForm('products', createFormData(product)),
-    deleteProduct: (id: number) => requests.delete(`products/${id}`)
+    deleteProduct: (id: number) => requests.delete(`products/${id}`),
+    createFutbollisti: (futbollisti: any) => requests.postForm('futbollisti', createFormData(futbollisti)),
+    updateFutbollisti: (futbollisti: any) => requests.putForm('futbollisti', createFormData(futbollisti)),
+    deleteFutbollisti: (id: number) => requests.delete(`futbollisti/${id}`),
 }
 
 const Catalog = {
     list: (params: URLSearchParams) => requests.get('products', params),
     details: (id: number) => requests.get(`products/${id}`),
     fetchFilters: () => requests.get('products/filters')
+}
+
+const Futbollisti = {
+    list: (params: URLSearchParams) => requests.get('futbollisti', params),
+    details: (id: number) => requests.get(`futbollisti/${id}`),
+    fetchFilters: () => requests.get('futbollisti/filters')
 }
 
 const TestErrors = {
@@ -120,6 +130,7 @@ const Payments = {
     createPaymentIntent: () => requests.post('payments', {})
 }
 
+
 const agent = {
     Catalog,
     TestErrors,
@@ -127,7 +138,8 @@ const agent = {
     Account,
     Orders,
     Payments, 
-    Admin
+    Admin, 
+    Futbollisti
 }
 
 export default agent;

@@ -86,36 +86,36 @@ namespace API.Controllers
         }
 
         [Authorize(Roles = "Admin")]
-[HttpPut]
-public async Task<ActionResult> UpdateProduct([FromForm] UpdateProductDto productDto)
-{
-    var product = await _context.Products.FindAsync(productDto.Id);
+        [HttpPut]
+        public async Task<ActionResult> UpdateProduct([FromForm] UpdateProductDto productDto)
+        {
+            var product = await _context.Products.FindAsync(productDto.Id);
 
-    if (product == null) return NotFound();
+            if (product == null) return NotFound();
 
-    _mapper.Map(productDto, product);
+            _mapper.Map(productDto, product);
 
-    if (productDto.File != null)
-    {
-        var imageResult = await _imageService.AddImageAsync(productDto.File);
+            if (productDto.File != null)
+            {
+                var imageResult = await _imageService.AddImageAsync(productDto.File);
 
-        if (imageResult.Error != null)
-            return BadRequest(new ProblemDetails { Title = imageResult.Error.Message });
+                if (imageResult.Error != null)
+                    return BadRequest(new ProblemDetails { Title = imageResult.Error.Message });
 
-        // Check if the product already has a PublicId and delete the old image
-        if (!string.IsNullOrEmpty(product.PublicId))
-            await _imageService.DeleteImageAsync(product.PublicId);
+                // Check if the product already has a PublicId and delete the old image
+                if (!string.IsNullOrEmpty(product.PublicId))
+                    await _imageService.DeleteImageAsync(product.PublicId);
 
-        product.PictureUrl = imageResult.SecureUrl.ToString();
-        product.PublicId = imageResult.PublicId;
-    }
+                product.PictureUrl = imageResult.SecureUrl.ToString();
+                product.PublicId = imageResult.PublicId;
+            }
 
-    var result = await _context.SaveChangesAsync();
+            var result = await _context.SaveChangesAsync();
 
-    if (result > 0) return NoContent();
+            if (result > 0) return NoContent();
 
-    return BadRequest(new ProblemDetails { Title = "Problem updating product" });
-}
+            return BadRequest(new ProblemDetails { Title = "Problem updating product" });
+        }
 
 
 

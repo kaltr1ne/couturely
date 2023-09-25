@@ -10,6 +10,8 @@ namespace API.RequestHelpers
         {
             CreateMap<CreateProductDto, Product>();
             CreateMap<UpdateProductDto, Product>();
+            CreateMap<CreateFutbollistiDto, Futbollisti>();
+            CreateMap<UpdateFutbollistiDto, Futbollisti>();
         }
     }
 }
