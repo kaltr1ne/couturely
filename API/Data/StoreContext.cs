@@ -15,7 +15,8 @@ namespace API.Data
         public DbSet<Product> Products { get; set; }
         public DbSet<Basket> Baskets { get; set; }
         public DbSet<Order> Orders { get; set; }
-
+        public DbSet<Skuadra> Skuadra {get; set;}
+        public DbSet<Futbollisti> Futbollisti {get; set;}
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);

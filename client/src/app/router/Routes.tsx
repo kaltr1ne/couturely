@@ -13,6 +13,7 @@ import ServerError from "../errors/ServerError";
 import App from "../layout/App";
 import RequireAuth from "./RequireAuth";
 import Inventory from "../../features/admin/Inventory";
+import FutbollistiAdmin from "../../features/admin/Futbollisti";
 
 export const router = createBrowserRouter([
     {
@@ -26,7 +27,9 @@ export const router = createBrowserRouter([
             ]},
             //admin routes 
             {element: <RequireAuth roles={['Admin']} />, children: [
-                {path: 'inventory', element: <Inventory />}
+                {path: 'inventory', element: <Inventory />},
+                {path: 'futbollisti', element: <FutbollistiAdmin />}
+                
             ]},
             {path: 'catalog', element: <Catalog />},
             {path: 'catalog/:id', element: <ProductDetails />},
