@@ -71,6 +71,14 @@ export default function Header({ handleThemeChange, darkMode }: Props) {
                         >
                             INVENTORY
                         </ListItem>}
+                    {/* {user && user.roles?.includes('Admin') &&
+                        <ListItem
+                            component={NavLink}
+                            to={'/futbollisti'}
+                            sx={navStyles}
+                        >
+                            FUTBOLLISTI
+                        </ListItem>} */}
                 </List>
 
                 <Box display='flex' alignItems='center'>

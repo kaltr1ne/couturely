@@ -15,7 +15,7 @@ const ContactPage = () => {
 
   const paperStyle = {
     padding: '2rem',
-    marginTop: '2rem',
+  marginTop: '2rem',
     backgroundColor: '#f7f7f7',
     borderRadius: '10px',
   };

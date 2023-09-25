@@ -3,6 +3,7 @@ import { toast } from "react-toastify";
 import { PaginatedResponse } from "../models/pagination";
 import { router } from "../router/Routes";
 import { store } from "../store/configureStore";
+import { request } from "http";
 
 const sleep = () => new Promise(resolve => setTimeout(resolve, 500))
 
@@ -80,13 +81,31 @@ function createFormData(item: any) {
 const Admin = {
     createProduct: (product: any) => requests.postForm('products', createFormData(product)),
     updateProduct: (product: any) => requests.putForm('products', createFormData(product)),
-    deleteProduct: (id: number) => requests.delete(`products/${id}`)
+    deleteProduct: (id: number) => requests.delete(`products/${id}`),
+    createFutbollisti: (futbollisti: any): Promise<any> => requests.postForm('futbollisti', createFormData(futbollisti)),
+    updateFutbollisti: (futbollisti: any): Promise<any> => requests.putForm('futbollisti', createFormData(futbollisti)),
+    deleteFutbollisti: (id: number): Promise<any> => requests.delete(`futbollisti/${id}`),
+    createSkuadra: (skuadra: any): Promise<any> => requests.postForm('skuadra', createFormData(skuadra)),
+    updateSkuadra: (skuadra: any): Promise<any> => requests.putForm('skuadra', createFormData(skuadra)),
+    deleteSkuadra: (id: number): Promise<any> => requests.delete(`skuadra/${id}`)
 }
 
 const Catalog = {
     list: (params: URLSearchParams) => requests.get('products', params),
     details: (id: number) => requests.get(`products/${id}`),
     fetchFilters: () => requests.get('products/filters')
+}
+
+const Futbollisti = {
+    list: (params: URLSearchParams) => requests.get('futbollisti', params),
+    details: (id: number) => requests.get(`futbollisti/${id}`),
+    fetchFilters: () => requests.get('futbollisti/filters')
+}
+
+const Skuadra = {
+    list: (params: URLSearchParams) => requests.get('skuadra', params),
+    details: (id: number) => requests.get(`skuadra/${id}`),
+    fetchFilters: () => requests.get('skuadra/filters')
 }
 
 const TestErrors = {
@@ -120,6 +139,7 @@ const Payments = {
     createPaymentIntent: () => requests.post('payments', {})
 }
 
+
 const agent = {
     Catalog,
     TestErrors,
@@ -127,7 +147,9 @@ const agent = {
     Account,
     Orders,
     Payments, 
-    Admin
+    Admin, 
+    Futbollisti, 
+    Skuadra
 }
 
 export default agent;
